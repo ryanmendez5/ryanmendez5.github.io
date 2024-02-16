@@ -111,6 +111,10 @@
             padding: 10px;
             cursor: pointer;
         }
+        a.dark-mode{
+            color: #fff;
+        }
+
     </style>
 </head>
 <script>
@@ -118,11 +122,16 @@
     function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
     }
+
+    function goHome() {
+        window.location.href = 'index.html';
+    }
 </script>
-<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-<a href="index.html">Go Back!</a>
 
 <body>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button onclick="goHome()">Back To Home</button>
+
     <header>
         <h1>Ryan Mendez</h1>
         <p>Computer Science | Centreville, VA | 571-598-7146 | 5ryanmendez25@gmail.com</p>
